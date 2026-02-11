@@ -1,0 +1,137 @@
+.votre-espace-section {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Top Section */
+.votre-espace-top {
+  padding: 7% 20%;
+  display: flex;
+  align-items: flex-end;
+  /* gap: 20px; */
+}
+
+.votre-espace-title {
+  font-size: 80px;
+  font-weight: 300;
+  color: #ff6f00;
+  letter-spacing: 1px;
+  font-style: italic;
+  text-align: center;
+}
+.votre-espace-parenthesis {
+  margin-bottom: 20px;
+}
+
+.votre-espace-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.votre-espace-description {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Image Section */
+.votre-espace-image-container {
+  position: relative;
+  width: 100%;
+  height: 778px;
+  overflow: hidden;
+}
+
+.votre-espace-image {
+  object-position: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .votre-espace-title {
+    font-size: 48px;
+  }
+
+  .parenthesis-left,
+  .parenthesis-right {
+    width: 60px;
+    height: 250px;
+  }
+
+  .votre-espace-description {
+    font-size: 16px;
+  }
+
+  .votre-espace-image-container {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .votre-espace-top {
+    padding: 60px 5% 40px;
+    gap: 30px;
+  }
+
+  .votre-espace-title {
+    font-size: 36px;
+  }
+
+  .votre-espace-content {
+    gap: 20px;
+  }
+
+  .parenthesis-left,
+  .parenthesis-right {
+    width: 50px;
+    height: 200px;
+  }
+
+  .votre-espace-text-wrapper {
+    padding-top: 10px;
+    gap: 20px;
+  }
+
+  .votre-espace-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .votre-espace-image-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .votre-espace-top {
+    padding: 40px 5% 30px;
+  }
+
+  .votre-espace-title {
+    font-size: 28px;
+  }
+
+  .votre-espace-content {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .parenthesis-left,
+  .parenthesis-right {
+    display: none;
+  }
+
+  .votre-espace-description {
+    font-size: 13px;
+  }
+
+  .votre-espace-image-container {
+    height: 300px;
+  }
+}

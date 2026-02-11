@@ -1,0 +1,123 @@
+.w5 {
+  width: 5%;
+}
+.w10 {
+  width: 10%;
+}
+.w15 {
+  width: 15%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w35 {
+  width: 35%;
+}
+.w40 {
+  width: 40%;
+}
+.w45 {
+  width: 45%;
+}
+.w50 {
+  width: 50%;
+}
+.w55 {
+  width: 55%;
+}
+.w60 {
+  width: 60%;
+}
+.w65 {
+  width: 65%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w85 {
+  width: 85%;
+}
+.w90 {
+  width: 90%;
+}
+.w95 {
+  width: 95%;
+}
+.w100 {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .wm5 {
+    width: 5%;
+  }
+  .wm10 {
+    width: 10%;
+  }
+  .wm15 {
+    width: 15%;
+  }
+  .wm20 {
+    width: 20%;
+  }
+  .wm25 {
+    width: 25%;
+  }
+  .wm30 {
+    width: 30%;
+  }
+  .wm35 {
+    width: 35%;
+  }
+  .wm40 {
+    width: 40%;
+  }
+  .wm45 {
+    width: 45%;
+  }
+  .wm50 {
+    width: 50%;
+  }
+  .wm55 {
+    width: 55%;
+  }
+  .wm60 {
+    width: 60%;
+  }
+  .wm65 {
+    width: 65%;
+  }
+  .wm70 {
+    width: 70%;
+  }
+  .wm75 {
+    width: 75%;
+  }
+  .wm80 {
+    width: 80%;
+  }
+  .wm85 {
+    width: 85%;
+  }
+  .wm90 {
+    width: 90%;
+  }
+  .wm95 {
+    width: 95%;
+  }
+  .wm100 {
+    width: 100%;
+  }
+}

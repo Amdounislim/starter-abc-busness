@@ -1,0 +1,39 @@
+.formules-list-container {
+  width: 100%;
+  background: linear-gradient(
+    -315deg,
+    #FF6F0059 0%,
+    #ffffff 0%,
+    #ffffff 85%,
+    #FF6F0059 100%
+  );
+}
+
+.formules-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 0px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .formules-list-container {
+    padding: 50px 60px;
+  }
+
+  .formules-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formules-list-container {
+    padding: 40px 20px;
+  }
+
+  .formules-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,15 @@
+.onlyMobile {
+  display: none;
+}
+.hideMobile {
+  display: inherit;
+}
+
+@media (max-width: 1200px) {
+  .onlyMobile {
+    display: inherit;
+  }
+  .hideMobile {
+    display: none !important;
+  }
+}

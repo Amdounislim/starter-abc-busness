@@ -1,0 +1,102 @@
+.flex-1 {
+  flex: 1;
+}
+
+/* ***************************** Alignement horizontal **************************************** */
+.alignH {
+  display: flex;
+  align-items: center;
+}
+.alignC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexRowRev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexRowBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexRowAround {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* ***************************** Alignement vertical **************************************** */
+
+.flexColumnRev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexColumnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ***************************** Alignement général **************************************** */
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ***************************** Alignement individuel **************************************** */
+
+.alignSelfStart {
+  align-self: flex-start;
+}
+
+.alignSelfEnd {
+  align-self: flex-end;
+}
+
+.alignSelfCenter {
+  align-self: center;
+}
+
+.alignItemsStart {
+  align-items: flex-start;
+}
+
+.alignItemsEnd {
+  align-items: flex-end;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}

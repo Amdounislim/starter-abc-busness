@@ -1,0 +1,21 @@
+/* Your primary button styles */
+.customButton {
+  min-width: 124px;
+  height: 32px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  border: 1px solid #ff6f00;
+}
+
+.customButton:hover {
+  background-color: #fff;
+  color: #ff6f00;
+  transition: all 0.5s ease;
+}

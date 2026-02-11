@@ -1,0 +1,110 @@
+/* ***************************** GENERAL STYLES **************************************** */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* To be changed */
+  font-family: var(--font-cormorant-garamond), serif;
+}
+
+.font-montserrat{
+  font-family: var(--font-montserrat), sans-serif !important;
+}
+
+.t02 {
+  transition: all 0.2s ease-in-out;
+}
+.t03 {
+  transition: all 0.3s ease-in-out;
+}
+.pointer {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.mainApp {
+  min-height: 100vh;
+}
+
+.ContainerAPP {
+  max-width: 100vw;
+  background-color: #f6faff;
+  margin: auto;
+}
+
+.innerApp {
+  max-width: 500px;
+  margin: auto;
+}
+.gnPadding {
+  padding: 0 3%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button,
+label,
+a,
+li,
+span {
+  margin: 0 !important;
+}
+
+/* ***************************** COLORS **************************************** */
+
+a {
+  color: unset;
+  cursor: pointer !important;
+  text-decoration: none !important;
+}
+
+/* ***************************** Z-INDEX Classes **************************************** */
+
+.z-index0 {
+  z-index: 0;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index2 {
+  z-index: 2;
+}
+
+.z-index3 {
+  z-index: 3;
+}
+
+.z-index4 {
+  z-index: 4;
+}
+
+.z-index5 {
+  z-index: 5;
+}
+
+/* ***************************** IMPORT STYLES **************************************** */
+.hello {
+  fill: red;
+  cursor: pointer;
+  background-color: #5e1717;
+}
+
+@import url(./globalStyles/index.css);
+@import url(./commons/index.css);
+@import url(./layout/index.css);

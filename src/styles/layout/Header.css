@@ -1,0 +1,26 @@
+.headerContainer {
+  height: 92px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 111, 0, 0.3);
+}
+
+.headerLogoCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.headerLink {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 15px;
+  color: #ff6f00;
+  transition: opacity 0.3s ease;
+}

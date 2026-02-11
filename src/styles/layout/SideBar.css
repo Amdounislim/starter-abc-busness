@@ -1,0 +1,37 @@
+.sideBarContainer {
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.sideBarHidden {
+  transform: translateX(50vw);
+  opacity: 0;
+}
+.sidebarOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+/* HIDE SIDEBAR SCROLLBAR */
+.sideBarContainer::-webkit-scrollbar {
+  display: none;
+}
+.sideBarContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (max-width: 1200px) {
+  .sideBarContainer {
+    width: 100vw;
+  }
+  .sideBarHidden {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}

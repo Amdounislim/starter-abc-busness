@@ -1,0 +1,116 @@
+.hero_section {
+  height: calc(100vh - 92px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.hero_background img {
+  filter: blur(8px);
+  transition: filter 0.4s ease;
+}
+
+.hero_section:has(.hero-title-container:hover) .hero_background img {
+  filter: blur(0px);
+}
+
+.hero_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.hero_section:has(.hero-title-container:hover) .hero_overlay {
+  opacity: 0;
+}
+
+.hero-title-container {
+  gap: 0;
+  line-height: 1;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  align-self: center;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.hero-title-container:hover {
+  opacity: 0;
+}
+
+.hero-title-line1,
+.hero-title-line3 {
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0%;
+  margin: 0;
+  line-height: 75px;
+}
+
+.hero-title-line2 {
+  font-size: 120px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0%;
+  margin: 0;
+  line-height: 110px;
+  font-family: var(--font-pinyon-script), "Pinyon Script", cursive, serif;
+}
+
+.hero-subtitle-hover {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hero-subtitle-hover:hover {
+  transform: scale(1.02);
+}
+
+.hero_bottom_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 2;
+  cursor: pointer;
+}
+.hero_bottom_text p {
+  width: 40%;
+}
+.h_line {
+  width: 40%;
+  height: 1px;
+  background: #fff;
+}
+
+@media (max-width: 1200px) {
+  .hero-title-container {
+    text-align: center;
+  }
+}

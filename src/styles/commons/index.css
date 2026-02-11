@@ -1,0 +1,26 @@
+/* IMPORTING ALL COMMON STYLES COMPONENTS */
+@import url(./Hero.css);
+@import url(./SplitScreen.css);
+@import url(./Carousel.css);
+@import url(./ImageBackgroundSection.css);
+@import url(./CarouselCard.css);
+@import url(./CustomButton.css);
+@import url(./AbcIntroImages.css);
+@import url(./TitleDescriptionWithImages.css);
+@import url(./MainSection.css);
+@import url(./VisitezEspaces.css);
+@import url(./CarrouselSection.css);
+@import url(./CarouselCard.css);
+@import url(./HeroSectionCentre.css);
+@import url(./TitleDescriptionWithImageCenter.css);
+@import url(./FormulesSection.css);
+@import url(./FormulesList.css);
+@import url(./FormuleCard.css);
+@import url(./ArticleCard.css);
+@import url(./ArticlesList.css);
+@import url(./VotreEspace.css);
+@import url(./ContactSection.css);
+
+
+
+
