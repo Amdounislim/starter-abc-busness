@@ -1,0 +1,23 @@
+.home-ellips-container {
+  position: relative;
+}
+
+.home-ellips-right {
+  position: absolute;
+  top: 35%;
+  bottom: 20%;
+  right: 0;
+  width: 53%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.home-ellips-left {
+  position: absolute;
+  top: 35%;
+  bottom: 20%;
+  left: 0;
+  width: 53%;
+  z-index: -1;
+  opacity: 0.8;
+}

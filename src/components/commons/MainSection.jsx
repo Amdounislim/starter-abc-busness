@@ -23,10 +23,10 @@ const MainSection = ({
   heightImage = "210px",
   background = `linear-gradient(
       135deg,
-      #FF6F0059 0%,
+      #ff6f001a 0%,
       #ffffff 25%,
-      #ffffff 75%,
-      #FF6F0059 100%
+      #ffffff 70%,
+      #ff6f001a 100%
     )`,
 }) => {
   return (

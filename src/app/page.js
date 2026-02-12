@@ -13,7 +13,7 @@ import ImageBackgroundSection from "@/components/commons/ImageBackgroundSection"
 import AbcIntroImages from "@/components/commons/AbcIntroImages";
 import TitleDescriptionWithImages from "@/components/commons/TitleDescriptionWithImages";
 import VisitezEspaces from "@/components/commons/VisitezEspaces";
-
+import Image from "next/image";
 const pageName = "Page d'acceuil";
 
 // export async function generateMetadata({}, parent) {
@@ -46,91 +46,97 @@ export default async function Home() {
       />
 
       <AbcIntroImages />
-      <TitleDescriptionWithImages
-        title={
-          <p>ABC Business Center Votre partenaire en Principauté de Monaco</p>
-        }
-        titleColor="text-orange"
-        description="ABC Business Center est un centre d’affaires situé en plein cœur de Monaco,
+      <div className="home-ellips-container">
+        <div className="home-ellips-right">
+          <Image
+            src={"/Ellipse.webp"}
+            alt={"ellips rigth"}
+            fill
+            priority
+            quality={100}
+          />
+        </div>
+        <div className="home-ellips-left">
+          <Image
+            src={"/Ellipse.webp"}
+            alt={"ellips left"}
+            fill
+            priority
+            quality={100}
+          />
+        </div>
+        <div S>
+          <TitleDescriptionWithImages
+            title={
+              <p>
+                ABC Business Center Votre partenaire en Principauté de Monaco
+              </p>
+            }
+            titleColor="text-orange"
+            description="ABC Business Center est un centre d’affaires situé en plein cœur de Monaco,
 dans le quartier dynamique de la Condamine, à deux pas de la gare, du port et de Fontvieille.
 Il propose des solutions flexibles pour accompagner le bon fonctionnement de toute entreprise, en vous permettant de vous concentrer sur le développement de votre activité pendant..."
-        buttonText="DÉCOUVRIR LE CENTRE"
-        images={[
-          {
-            src: "/ABC_center_1.webp",
-            alt: "ABC_center_1",
-            width: 320,
-            height: 275,
-          },
-          // {
-          //   src: "/ABC_center_2.webp",
-          //   alt: "ABC_center_2",
-          //   width: 250,
-          //   height: 250,
-          // },
-          {
-            src: "/ABC_center_3.webp",
-            alt: "ABC_center_3",
-            width: 320,
-            height: 275,
-          },
-          // {
-          //   src: "/ABC_center_4.webp",
-          //   alt: "ABC_center_4",
-          //   width: 250,
-          //   height: 250,
-          // },
-          // {
-          //   src: "/ABC_center_5.webp",
-          //   alt: "ABC_center_5",
-          //   width: 250,
-          //   height: 250,
-          // },
-        ]}
-        gapImages="130px"
-        background="linear-gradient(
+            buttonText="DÉCOUVRIR LE CENTRE"
+            images={[
+              {
+                src: "/ABC_center_1.webp",
+                alt: "ABC_center_1",
+                width: 320,
+                height: 275,
+              },
+              {
+                src: "/ABC_center_3.webp",
+                alt: "ABC_center_3",
+                width: 320,
+                height: 275,
+              },
+            ]}
+            gapImages="130px"
+            background="linear-gradient(
           45deg,
           #FF6F0059 0%,
-          #ffffff 25%,
-          #ffffff 100%,
+          transparent 25%,
+          transparent 100%,
           #FF6F0059 100%
         )"
-      />
+          />
 
-      <TitleDescriptionWithImages
-        title={<p>NOS BUREAUX EXCLUSIFS AVEC ENTRÉE PRIVATIVE</p>}
-        titleColor="text-orange"
-        description="Les bureaux privatifs d’ABC Business Center sont des espaces de travail individuels et entièrement meublés, conçus pour répondre aux besoins des entrepreneurs et des sociétés souhaitant une présence professionnelle en Principauté de Monaco."
-        buttonText="DÉCOUVRIR NOS SERVICES"
-        images={[
-          {
-            src: "/ABC_center_6.webp",
-            alt: "ABC_center_6",
-            width: 354,
-            height: 390,
-          },
-          {
-            src: "/ABC_center_7.webp",
-            alt: "ABC_center_7",
-            width: 354,
-            height: 255,
-          },
-          {
-            src: "/ABC_center_8.webp",
-            alt: "ABC_center_8",
-            width: 540,
-            height: 390,
-          },
-        ]}
-        gapImages="50px"
-        background="linear-gradient(
+          <TitleDescriptionWithImages
+            title={<p>NOS BUREAUX EXCLUSIFS AVEC ENTRÉE PRIVATIVE</p>}
+            titleColor="text-orange"
+            description="Les bureaux privatifs d’ABC Business Center sont des espaces de travail individuels et entièrement meublés, conçus pour répondre aux besoins des entrepreneurs et des sociétés souhaitant une présence professionnelle en Principauté de Monaco."
+            buttonText="DÉCOUVRIR NOS SERVICES"
+            images={[
+              {
+                src: "/ABC_center_6.webp",
+                alt: "ABC_center_6",
+                width: 354,
+                height: 390,
+              },
+              {
+                src: "/ABC_center_7.webp",
+                alt: "ABC_center_7",
+                width: 354,
+                height: 255,
+              },
+              {
+                src: "/ABC_center_8.webp",
+                alt: "ABC_center_8",
+                width: 540,
+                height: 390,
+              },
+            ]}
+            gapImages="50px"
+            background="linear-gradient(
           135deg,
           #FF6F0059 0%,
-          #ffffff 25%,
-          #ffffff 100%,
+          transparent 25%,
+          transparent 70%,
           #FF6F0059 100%
         )"
-      />
+          />
+        </div>
+      </div>
 
       <VisitezEspaces
         title="VISITEZ NOS ESPACES ET DÉCOUVREZ UN COWORKING CONÇU POUR VOUS"
@@ -145,6 +151,13 @@ Il propose des solutions flexibles pour accompagner le bon fonctionnement de tou
         buttonText="DÉCOUVRIR NOS OFFRES"
         buttonLink="#"
         onButtonClick
+        background="linear-gradient(
+          45deg,
+          #FF6F0059 0%,
+          #ffffff 0%,
+          #ffffff 70%,
+          #FF6F0059 100%
+        )"
       />
 
       <CarrouselSection

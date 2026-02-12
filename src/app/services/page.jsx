@@ -30,10 +30,10 @@ const Services = () => {
         paddingDescription="0% 24%"
         background="linear-gradient(
           135deg,
-          #FF6F0059 0%,
+          #ff6f001a 0%,
           #ffffff 25%,
           #ffffff 100%,
-          #FF6F0059 100%
+          #ff6f001a 100%
         )"
       />
       <VisitezEspaces

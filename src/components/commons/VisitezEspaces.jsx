@@ -6,9 +6,10 @@ const VisitezEspaces = ({
   description,
   images,
   buttonText,
+  background,
 }) => {
   return (
-    <div className="visitez-espaces-container">
+    <div className="visitez-espaces-container" style={{ background }}>
       {title && <h2 className="visitez-title">{title}</h2>}
 
       {description && <p className="visitez-description">{description}</p>}

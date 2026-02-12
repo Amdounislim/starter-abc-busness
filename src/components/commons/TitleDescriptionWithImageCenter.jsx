@@ -25,6 +25,24 @@ const TitleDescriptionWithImageCenter = ({
       className="title-description-image-center-section"
       style={{ background }}
     >
+      <div className="title-description-ellips-right">
+        <Image
+          src={"/Ellipse.webp"}
+          alt={"ellips rigth"}
+          fill
+          priority
+          quality={100}
+        />
+      </div>
+      <div className="title-description-ellips-left">
+        <Image
+          src={"/Ellipse.webp"}
+          alt={"ellips left"}
+          fill
+          priority
+          quality={100}
+        />
+      </div>
       <div className="center-content-container">
         <h2 className={`center-section-title ${titleColor}`}>{title}</h2>
 

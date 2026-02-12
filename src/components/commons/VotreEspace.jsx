@@ -12,9 +12,33 @@ const VotreEspace = ({
 }) => {
   return (
     <section className="votre-espace-section">
+      <div className="votre-espace-ellips-right">
+        <Image
+          src={"/Ellipse.webp"}
+          alt={"ellips rigth"}
+          fill
+          priority
+          quality={100}
+        />
+      </div>
+      <div className="votre-espace-ellips-left">
+        <Image
+          src={"/Ellipse.webp"}
+          alt={"ellips left"}
+          fill
+          priority
+          quality={100}
+        />
+      </div>
       {/* Top Section - Text Content */}
       <div className="votre-espace-top">
-        <Image src="(.svg" alt="(" width={70} height={220} className="votre-espace-parenthesis" />
+        <Image
+          src="(.svg"
+          alt="("
+          width={70}
+          height={220}
+          className="votre-espace-parenthesis"
+        />
         <div className="votre-espace-text-wrapper">
           <h2 className="votre-espace-title">{title}</h2>
           <p className="votre-espace-description">{description}</p>
@@ -25,7 +49,13 @@ const VotreEspace = ({
             fontStyle="italic"
           />
         </div>
-        <Image src=").svg" alt=")" width={70} height={220} className="votre-espace-parenthesis" />
+        <Image
+          src=").svg"
+          alt=")"
+          width={70}
+          height={220}
+          className="votre-espace-parenthesis"
+        />
       </div>
 
       {/* Bottom Section - Image */}

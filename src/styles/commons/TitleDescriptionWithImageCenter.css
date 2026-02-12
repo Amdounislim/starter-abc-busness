@@ -4,6 +4,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.title-description-ellips-right {
+  position: absolute;
+  top: -40%;
+  right: 0;
+  height: 70%;
+  width: 52%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.title-description-ellips-left {
+  position: absolute;
+  top: -40%;
+  left: 0;
+  height: 70%;
+  width: 52%;
+  z-index: -1;
+  opacity: 0.8;
 }
 
 .center-content-container {

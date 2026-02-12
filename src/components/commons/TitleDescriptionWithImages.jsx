@@ -18,7 +18,7 @@ const TitleDescriptionWithImages = ({
   buttonLink = "#",
   images = [],
   titleColor = "text-orange",
-  background = "#fff",
+  background="transparent",
   gapImages,
 }) => {
   return (
@@ -107,7 +107,10 @@ const TitleDescriptionWithImages = ({
         </div>
       )} */}
       {images.length > 0 && (
-        <div className="d-flex align-items-end justify-content-center" style={{ gap: gapImages }}>
+        <div
+          className="d-flex align-items-end justify-content-center"
+          style={{ gap: gapImages }}
+        >
           {images.map((image, index) => (
             <Image
               key={index}

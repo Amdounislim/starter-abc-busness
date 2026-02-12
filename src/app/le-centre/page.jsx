@@ -76,10 +76,10 @@ const LeCentre = () => {
         }
         background="linear-gradient(
           45deg,
-          #FF6F0059 0%,
-          #ffffff 25%,
+          #ff6f001a 0%,
+          #ffffff 35%,
           #ffffff 100%,
-          #FF6F0059 100%
+          #ff6f001a 100%
         )"
       />
       <FormulesSection
