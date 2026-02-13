@@ -1,8 +1,10 @@
 .sideBarContainer {
   position: fixed;
   width: 50vw;
-  height: 100vh;
+  top: 92px;
+  height: calc(100vh - 92px);
   background-color: white;
+  opacity: 0.9;
   right: 0;
   overflow-y: scroll;
 }

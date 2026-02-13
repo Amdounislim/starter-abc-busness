@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useSideBarContext } from "@/context/SideBarProvider";
 
 const FormuleCard = ({
   number,
@@ -10,16 +11,18 @@ const FormuleCard = ({
   price,
   imageSrc,
 }) => {
+  const { openSideBar } = useSideBarContext();
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="formule-card">
+    <div className="formule-card" >
       <h3 className="formule-title">{title}</h3>
 
       <div
         className="formule-image-container t03"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={openSideBar}
       >
         {!isHovered ? (
           <Image

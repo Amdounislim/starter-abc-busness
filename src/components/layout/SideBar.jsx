@@ -7,29 +7,34 @@ const SideBar = () => {
   const { sideBar, closeSideBar } = useSideBarContext();
   return (
     <>
-      {sideBar && (
+      {/* {sideBar && (
         <div
           className="z-index4 sidebarOverlay"
           aria-hidden="true"
           onClick={closeSideBar}
         ></div>
-      )}
+      )} */}
       <div
-        className={`sideBarContainer border p-4 z-index5 ${
+        className={`sideBarContainer border py-4 px-5 z-index5 ${
           !sideBar && "sideBarHidden"
         } t02`}
       >
-        <div className="alignH gap-4">
+        <div
+          className="alignH gap-2"
+          onClick={closeSideBar}
+          style={{ cursor: "pointer" }}
+        >
           <Image
-            onClick={closeSideBar}
             className="pointer"
-            src="./icons/closeSideBar.svg"
-            width={40}
-            height={40}
+            src="./Vector_close.svg"
+            width={10}
+            height={10}
             alt="close"
           />
 
-          <div className="f30 bold">Contact</div>
+          <div className="f12 medium font-montserrat text-orange opacity-50">
+            Fermer
+          </div>
           <div>{/* IMPORT YOUR SIDE BAR INNER COMPONENT */}</div>
         </div>
       </div>
