@@ -1,9 +1,18 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-const ArticleCard = ({ title, imageSrc, link }) => {
+const ArticleCard = ({ id, title, imageSrc, link }) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/actualites/${id}`);
+  };
+
   return (
-    <div className="article-card">
+    <div className="article-card" onClick={handleClick}>
       <div className="article-card-image-wrapper">
         <Image src={imageSrc} alt={title} fill className="article-card-image" />
       </div>
