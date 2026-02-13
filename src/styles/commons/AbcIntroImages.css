@@ -1,9 +1,8 @@
 .abc-intro-images-container {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  padding: 5%;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  padding: 7% 0;
 }
 
 /* .abc-intro-left {
@@ -13,7 +12,7 @@
 .abc-intro-right {
   display: flex;
   align-items: flex-end;
-  gap: 25px;
+  /* gap: 25px; */
 }
 
 .abc-intro-image {

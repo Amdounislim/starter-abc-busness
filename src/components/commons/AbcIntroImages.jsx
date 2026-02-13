@@ -9,7 +9,7 @@ const AbcIntroImages = () => {
           <Image
             src="/intro_image_1.webp"
             alt="ABC Business Center Exterior"
-            width={540}
+            width={647}
             height={390}
             className="abc-intro-image"
           />
@@ -17,7 +17,7 @@ const AbcIntroImages = () => {
         </div>
       </div>
       <div className="abc-intro-right">
-        <div class="image-wrapper">
+        {/* <div class="image-wrapper">
           <Image
             src="/intro_image_2.webp"
             alt="ABC Business Center Office 1"
@@ -26,12 +26,12 @@ const AbcIntroImages = () => {
             className="abc-intro-image"
           />
           <div class="overlay-image"></div>
-        </div>
+        </div> */}
         <div class="image-wrapper">
           <Image
             src="/intro_image_3.webp"
             alt="ABC Business Center Office 2"
-            width={500}
+            width={647}
             height={390}
             className="abc-intro-image"
           />

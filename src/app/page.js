@@ -11,9 +11,10 @@ import Separator from "@/components/commons/Separator";
 import OpenModalButton from "@/components/commons/Buttons/OpenModalButton";
 import ImageBackgroundSection from "@/components/commons/ImageBackgroundSection";
 import AbcIntroImages from "@/components/commons/AbcIntroImages";
-import TitleDescriptionWithImages from "@/components/commons/TitleDescriptionWithImages";
+import AbcBusinessCenter from "@/components/commons/AbcBusinessCenter";
 import VisitezEspaces from "@/components/commons/VisitezEspaces";
 import Image from "next/image";
+import NosBureauxExclusifs from "@/components/commons/NosBureauxExclusifs";
 const pageName = "Page d'acceuil";
 
 // export async function generateMetadata({}, parent) {
@@ -66,7 +67,7 @@ export default async function Home() {
           />
         </div>
         <div S>
-          <TitleDescriptionWithImages
+          <AbcBusinessCenter
             title={
               <p>
                 ABC Business Center Votre partenaire en Principauté de Monaco
@@ -101,7 +102,7 @@ Il propose des solutions flexibles pour accompagner le bon fonctionnement de tou
         )"
           />
 
-          <TitleDescriptionWithImages
+          <NosBureauxExclusifs
             title={<p>NOS BUREAUX EXCLUSIFS AVEC ENTRÉE PRIVATIVE</p>}
             titleColor="text-orange"
             description="Les bureaux privatifs d’ABC Business Center sont des espaces de travail individuels et entièrement meublés, conçus pour répondre aux besoins des entrepreneurs et des sociétés souhaitant une présence professionnelle en Principauté de Monaco."
@@ -117,12 +118,12 @@ Il propose des solutions flexibles pour accompagner le bon fonctionnement de tou
                 src: "/ABC_center_7.webp",
                 alt: "ABC_center_7",
                 width: 354,
-                height: 255,
+                height: 390,
               },
               {
                 src: "/ABC_center_8.webp",
                 alt: "ABC_center_8",
-                width: 540,
+                width: 340,
                 height: 390,
               },
             ]}

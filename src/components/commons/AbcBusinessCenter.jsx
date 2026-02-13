@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import CustomButton from "../commons/Buttons/CustomButton";
+import CustomButton from "./Buttons/CustomButton";
 /**
- * TitleDescriptionWithImages - A reusable component with title, description, button, and image grid
+ * AbcBusinessCenter - A reusable component with title, description, button, and image grid
  * @param {React.ReactNode} title - Title content (can include HTML tags)
  * @param {string} description - Description text below title
  * @param {string} buttonText - Text for the CTA button
@@ -11,7 +11,7 @@ import CustomButton from "../commons/Buttons/CustomButton";
  * @param {string} titleColor - CSS class for title color (optional)
  * @param {string} backgroundColor - Background color (optional)
  */
-const TitleDescriptionWithImages = ({
+const AbcBusinessCenter = ({
   title,
   description,
   buttonText,
@@ -126,4 +126,4 @@ const TitleDescriptionWithImages = ({
   );
 };
 
-export default TitleDescriptionWithImages;
+export default AbcBusinessCenter;
